@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://tse1.mm.bing.net/th?id=OIP.llbQzyTJeWxKib8nbD5EOwHaHa&pid=Api&P=0&h=180">
+    <link rel="icon" href="https://tse3.mm.bing.net/th?id=OIP.LT6Xy-98iP8WqDcjrDriCQHaHa&pid=Api&P=0&h=180">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -14,15 +14,16 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pushkar's Portfolio</title>
 </head>
 
 <body>
 
     <!-- navbar starts here -->
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">PUSHKAR</a>
+    <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><span class="brand focus-in-contract-bck">Pushkar</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,19 +32,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home"><span class="navmenu">Home</span> <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about"><span class="navmenu">About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills"><span class="navmenu">Skills</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects"><span class="navmenu">Projects</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact"><span class="navmenu">Contact</span></a>
                     </li>
 
                 </ul>
@@ -51,7 +53,100 @@
         </nav>
     </div>
     <!-- navbar ends here -->
+    <div class="main-container">
+        <section id="home" class="portfolio-section">
+            <div id="home-info">
+                <span class="info">Hi</span><br>
+                <span class="info">My name is</span><br>
+                <span class="brand myname">PUSHKAR</span><br>
+                <span class="info">I am a <span>Full Stack Developer</span></span><br>
+                <button class="rsmbtn" href="demo.pdf">RESUME</button>
 
+            </div>
+        </section>
+        <section id="about" class="portfolio-section">
+            <div class="maain-container">
+                <div class="abt-img">
+                    <img src="http://pluspng.com/img-png/web-development-png-web-development-1100.png" alt="">
+                </div>
+                <div class="abt-text">
+                    <h1>About</h1>
+                    <p class="text-focus-in">I want a challenging position in a company that will utilize my skills and
+                        provide me an opportunity for personal and professional growth.</p>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="skills" class="portfolio-section">
+            <h1 class="heading">Skills</h1>
+            <table class="tbl" height="450px" width="90%" cellspacing="50px">
+                <tr align="center" valign="top">
+                    <div class="borderskills">
+                        <td data-aos="slide-right" width="50%">
+                            <h2 class="skills-subheading">Languages</h2>
+                            <p class="detailedSkills">Core Java, C, HTML, CSS, JavaScript, SQL</p>
+                        </td>
+                        <td data-aos="slide-left">
+                            <h2 class="skills-subheading">API's and Frameworks</h2>
+                            <p class="detailedSkills">Collection, Rest API, ReactJS</p>
+                        </td>
+                    </div>
+                </tr>
+                <tr align="center" valign="top">
+                    <div class="borderskills">
+                        <td data-aos="slide-right" width="50%">
+                            <h2 class="skills-subheading">Tools</h2>
+                            <p class="detailedSkills">VS Code, IntelliJ, MySql workbench, Apache Netbeans</p>
+                        </td>
+                        <td data-aos="slide-left">
+                            <h2 class="skills-subheading">Operating System</h2>
+                            <p class="detailedSkills">Windows, Android, ios, Ubuntu</p>
+                        </td>
+                    </div>
+                </tr>
+            </table>
+        </section>
+        <section id="projects" class="portfolio-section">
+            <h1>Projects</h1>
+            <div class="card-container-main">
+                <div class="card-deck">
+                    <div class="card">
+                      <img src="https://cdn0.iconfinder.com/data/icons/flatico/512/monitor_code__editor-512.png" height="300px" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Code Editor</a> </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                      
+                    </div>
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Notes Keeper</a></h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="">Chat App</a> </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section id="contact" class="portfolio-section">
+            <h1>Contact</h1>
+        </section>
+
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>
